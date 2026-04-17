@@ -1,4 +1,4 @@
-# 📜 future-planner Changelog
+# 📜 project-manager Changelog
 
 ## v1.0.0 — 2026-04-17 — Initial Release
 
@@ -31,7 +31,7 @@
 - Stakeholder-grade reporting (snapshots, not essays)
 
 ### 💡 Why this exists
-Solo builders don't have PMs. So they ship impulsively, forget to kill dead plans, let roadmaps rot, and build speculative complexity. `/future-planner` enforces the **earn-your-features** discipline as an agent so the human building things doesn't have to be their own PM on top of everything else.
+Solo builders don't have PMs. So they ship impulsively, forget to kill dead plans, let roadmaps rot, and build speculative complexity. `/project-manager` enforces the **earn-your-features** discipline as an agent so the human building things doesn't have to be their own PM on top of everything else.
 
 ### 🏗️ Spawned from
 Extracted from the `claude-sessions/skills/roadmap/` skill that originally managed the archive ecosystem's roadmap. Generalized to work with any repo's ROADMAP.md.

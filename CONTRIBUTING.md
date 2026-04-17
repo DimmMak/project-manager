@@ -1,4 +1,4 @@
-# 🤝 Contributing to future-planner
+# 🤝 Contributing to project-manager
 
 PRs welcome. Highest-impact contributions:
 
@@ -13,10 +13,10 @@ Think of a PM duty we missed. Document it:
 4. Open a PR with a short rationale
 
 Good candidate subcommands we considered but skipped:
-- `/future-planner export csv` — emit roadmap as CSV for spreadsheet users
-- `/future-planner gantt` — generate a text-based Gantt chart of ships
-- `/future-planner conflicts` — detect dependencies between items
-- `/future-planner snapshot` — archive the current roadmap state before big changes
+- `/project-manager export csv` — emit roadmap as CSV for spreadsheet users
+- `/project-manager gantt` — generate a text-based Gantt chart of ships
+- `/project-manager conflicts` — detect dependencies between items
+- `/project-manager snapshot` — archive the current roadmap state before big changes
 
 ---
 

@@ -17,7 +17,7 @@
 
 ## 🥇 TIER 1 — Build this week (earned)
 
-_(no items yet — add with `/future-planner add 1 "title" "why earned"`)_
+_(no items yet — add with `/project-manager add 1 "title" "why earned"`)_
 
 ---
 

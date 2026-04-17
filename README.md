@@ -1,17 +1,17 @@
-# 🗺️📋 future-planner
+# 🗺️📋 project-manager
 
 > **A Product Manager in a `.skill` file.** Plays the corporate role of a PM for any repo with a ROADMAP.md — triage, prioritization, sprint planning, shipping rituals, retrospectives, stale-item flagging — so the human building things doesn't have to.
 
 ```
-YOU                           /future-planner                 RESULT
+YOU                           /project-manager                 RESULT
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-"what's the plan?"            /future-planner status          Executive snapshot
-"what should I build?"        /future-planner review          Trigger audit + recs
-"ship T1.1"                   /future-planner ship            CHANGELOG updated
-"promote T2.1"                /future-planner promote         Evidence-gated
-"kill T3.2"                   /future-planner kill            Rationale documented
-"weekly plan"                 /future-planner plan            Sprint laid out
-"retro the month"             /future-planner retro           What shipped / missed
+"what's the plan?"            /project-manager status          Executive snapshot
+"what should I build?"        /project-manager review          Trigger audit + recs
+"ship T1.1"                   /project-manager ship            CHANGELOG updated
+"promote T2.1"                /project-manager promote         Evidence-gated
+"kill T3.2"                   /project-manager kill            Rationale documented
+"weekly plan"                 /project-manager plan            Sprint laid out
+"retro the month"             /project-manager retro           What shipped / missed
 ```
 
 **You never touch ROADMAP.md manually.** The agent keeps it honest.
@@ -22,7 +22,7 @@ YOU                           /future-planner                 RESULT
 
 Solo builders don't usually have Product Managers. So they ship features impulsively, forget to kill dead plans, let roadmaps go stale, and build speculative complexity that never earns its place.
 
-`/future-planner` installs the **PM discipline** as a skill:
+`/project-manager` installs the **PM discipline** as a skill:
 - No item enters "priority" without evidence
 - No item stalls silently in high-priority tier
 - No kills happen without documentation
@@ -38,13 +38,13 @@ It's the earn-your-features principle, enforced by an agent.
 
 ```bash
 # Clone the repo
-git clone https://github.com/DimmMak/future-planner.git
-cd future-planner
+git clone https://github.com/DimmMak/project-manager.git
+cd project-manager
 
 # Install as a .skill (both dir + zip for compatibility)
-mkdir -p ~/.claude/skills/future-planner
-cp SKILL.md ~/.claude/skills/future-planner/
-zip -r ~/.claude/skills/future-planner.skill future-planner/ 
+mkdir -p ~/.claude/skills/project-manager
+cp SKILL.md ~/.claude/skills/project-manager/
+zip -r ~/.claude/skills/project-manager.skill project-manager/ 
 ```
 
 ### Initialize a roadmap
@@ -52,7 +52,7 @@ zip -r ~/.claude/skills/future-planner.skill future-planner/
 In any repo:
 
 ```
-/future-planner init
+/project-manager init
 ```
 
 Creates a fresh `ROADMAP.md` in the current directory from the template.
@@ -60,12 +60,12 @@ Creates a fresh `ROADMAP.md` in the current directory from the template.
 ### Use it
 
 ```bash
-/future-planner status                  # executive summary
-/future-planner add 2 "Add dark mode" "users keep asking"
-/future-planner review                  # weekly triage ritual  
-/future-planner ship T1.1 "shipped as planned in PR #42"
-/future-planner plan                    # what to ship this week
-/future-planner retro                   # monthly retrospective
+/project-manager status                  # executive summary
+/project-manager add 2 "Add dark mode" "users keep asking"
+/project-manager review                  # weekly triage ritual  
+/project-manager ship T1.1 "shipped as planned in PR #42"
+/project-manager plan                    # what to ship this week
+/project-manager retro                   # monthly retrospective
 ```
 
 ---
@@ -74,18 +74,18 @@ Creates a fresh `ROADMAP.md` in the current directory from the template.
 
 | Command | What it does |
 |---|---|
-| `/future-planner status` | Executive snapshot (tier counts, last update, blockers) |
-| `/future-planner review` | Weekly triage + trigger audit + recommendations |
-| `/future-planner ship {ID} "notes"` | Mark item shipped, move to CHANGELOG |
-| `/future-planner promote {ID} {tier} "why"` | Move item up a tier |
-| `/future-planner demote {ID} {tier} "why"` | Move item down a tier |
-| `/future-planner kill {ID} "why"` | Remove from plan, document rationale |
-| `/future-planner add {tier} "title" "why"` | Add new item to specified tier |
-| `/future-planner audit` | Flag stalled items |
-| `/future-planner plan` | Weekly sprint plan |
-| `/future-planner retro` | Monthly retrospective |
-| `/future-planner show {tier}` | Filter view to one tier |
-| `/future-planner init` | Create ROADMAP.md from template |
+| `/project-manager status` | Executive snapshot (tier counts, last update, blockers) |
+| `/project-manager review` | Weekly triage + trigger audit + recommendations |
+| `/project-manager ship {ID} "notes"` | Mark item shipped, move to CHANGELOG |
+| `/project-manager promote {ID} {tier} "why"` | Move item up a tier |
+| `/project-manager demote {ID} {tier} "why"` | Move item down a tier |
+| `/project-manager kill {ID} "why"` | Remove from plan, document rationale |
+| `/project-manager add {tier} "title" "why"` | Add new item to specified tier |
+| `/project-manager audit` | Flag stalled items |
+| `/project-manager plan` | Weekly sprint plan |
+| `/project-manager retro` | Monthly retrospective |
+| `/project-manager show {tier}` | Filter view to one tier |
+| `/project-manager init` | Create ROADMAP.md from template |
 
 ---
 
@@ -117,7 +117,7 @@ Items move BETWEEN tiers as evidence accumulates. Movement is always documented 
 ## 📂 Repo layout
 
 ```
-future-planner/
+project-manager/
 ├── README.md                      # This file
 ├── SKILL.md                       # The Claude skill spec
 ├── CHANGELOG.md                   # Version history
