@@ -1,5 +1,6 @@
 ---
 name: project-manager
+version: 0.2.0
 domain: general
 description: >
   The Product Manager agent for any project with a ROADMAP.md. Plays real-world
