@@ -8,6 +8,19 @@ description: >
   status reports. Works on any repo with a ROADMAP.md at its root. Enforces
   the earn-your-features discipline so features never ship without evidence
   of real pain.
+  NOT for: the world-class overhaul specifically (use future-proof).
+  NOT for: attention ranking of fund items (use chief-of-staff).
+  NOT for: creating new skills (use skill-builder).
+capabilities:
+  reads:
+    - "{project}/ROADMAP.md (at current working dir)"
+  writes:
+    - "{project}/ROADMAP.md"
+  calls:
+    - "git"
+  cannot:
+    - "modify other skills' data"
+    - "skip earn-your-features gate"
 ---
 
 # 🗺️📋 /project-manager — PM Agent for Any Project
