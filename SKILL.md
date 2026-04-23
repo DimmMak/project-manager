@@ -11,7 +11,7 @@ description: >
   of real pain.
   NOT for: the world-class overhaul specifically (use future-proof).
   NOT for: attention ranking of fund items (use chief-of-staff).
-  NOT for: creating new skills (use skill-builder).
+  NOT for: creating new skills (use snes-builder).
 capabilities:
   reads:
     - "{project}/ROADMAP.md (at current working dir)"
